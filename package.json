@@ -1,0 +1,14 @@
+{
+  "name": "slack-irc-heroku-client",
+  "version": "0.1.0",
+  "description": "Bridge slack and IRC with a Heroku app",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "scripts": {
+    "start": "slack-irc-client -t $SLACK_API_TOKEN"
+  },
+  "dependencies": {
+    "slack-irc-client": "^0.3.0"
+  }
+}
