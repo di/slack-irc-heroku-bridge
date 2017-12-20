@@ -30,6 +30,11 @@ in the channels you join will be forwarded to Slack.
         "secure": true
       }
       ```
+    - You may also want to ignore some common IRC actions. Add this to the JSON
+      configuration:
+      ```
+        "muteIrcEvents": ["join", "part", "quit", "kick", "kill"]
+      ```
 1.  Clone this repository:
     ```
     $ git clone git@github.com:di/slack-irc-heroku-bridge.git
