@@ -9,6 +9,6 @@
     "start": "slack-irc-client -t $SLACK_API_TOKEN"
   },
   "dependencies": {
-    "slack-irc-client": "0.3.1"
+    "slack-irc-client": "0.3.2"
   }
 }
