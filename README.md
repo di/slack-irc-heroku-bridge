@@ -33,8 +33,21 @@ in the channels you join will be forwarded to Slack.
     - You may also want to ignore some common IRC actions. Add this to the JSON
       configuration:
       ```
-        "muteIrcEvents": ["join", "part", "quit", "kick", "kill"]
+        "muteIrcEvents": ["join", ...]
       ```
+      Valid values for this field are as follows:
+
+      | Value   | Description                                     |
+      | ------- | ----------------------------------------------- |
+      | `join`  | Mute JOIN messages in the channel               |
+      | `kick`  | Mute KICK messages in the channel               |
+      | `kill`  | Mute KILL messages in the channel               |
+      | `motd`  | Mute MOTD direct messages from slackbot on join |
+      | `names` | Mute membership list in the channel on join     |
+      | `part`  | Mute PART messages in the channel               |
+      | `quit`  | Mute QUIT messages in the channel               |
+      | `topic` | Don't set the topic in the channel on join      |
+
 1.  Clone this repository:
     ```
     $ git clone git@github.com:di/slack-irc-heroku-bridge.git
